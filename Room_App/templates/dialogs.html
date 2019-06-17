@@ -1,0 +1,167 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="/static/content/dialog-box-effect.css" />
+<link rel="stylesheet" type="text/css" href="/static/content/dial-table.css" />
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<center ><h5><strong>Please read the conversation then in summary discussion give a rate</strong></h5></center>
+
+<br>
+<br>
+ 
+
+   
+
+    <div>
+            {% for value in range_posts %} 
+            <div class="row">
+            <div class="col-md-6">
+        
+            </div>
+            <div class="col-md-6" style="background-color:#abbfe7;">
+                    <br>
+                    <br>
+             
+                &nbsp;
+                <label>     {{posts[value].n.major_premise}}</label>
+            </div>
+            </div>
+            <br />
+         
+
+
+ <div class="row">
+        <div class="col-md-6">
+      
+                    <div class="dialogue-box">
+                           
+                                   
+                                
+                            <div class="tdialogue-box-text">
+
+                                    <label> {{posts[value].n.argu}}</label>
+        
+                         </div>
+                         <div class="triangle-with-shadow"></div>
+                        </div>
+                        </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+             
+<ul class="pager">
+  <div class="row">
+      <div class="col-md-6">
+          <li class="previous"><a href="{{ url_for('dialogs')}}">Previous</a></li>
+      </div>
+      <br>
+      
+      <div class="col-md-6">
+          <li class="previous"><a href="{{ url_for('dialogs')}}">Next</a></li>
+</ul>
+
+</center>
+
+  
+</div>
+
+<br>
+<align=center>
+
+<table class="minimalistBlack">
+  
+  <thead>
+  <tr>
+  <th><center>Peter</center></th>
+  <th><center>Anna</center></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+  <td>I gotta bad toothache but, I’ve been taking  care of my teeth</td><td>Why you don't see a dentist? You may have a cavity, that’s not unusual for a sweet tooth like you.</td></tr>
+  <tr>
+  <td>I have been taking good care of my teeth at home, I brush two times a day and I use mouthwash. That should be enough.</td><td>Even if you take excellent care of your teeth and gums at home, you still need to see a 
+    dentist regularly because your dentist can check for problems that you may not see or feel. Many dental problems don't become visible or cause pain until they are in more advanced stages.
+    </td></tr>
+  <tr>
+  <td>Dentistry has really gotten to be a scam. Where I live, a cleaning and exam with bitewing x-rays are now almost £300. I take excellent care of my teeth (daily floss, Waterpik, interstitial brushes, electric toothbrush, etc.)</td><td>If you considering skipping a dental checkup because of the cost, make sure to consider all the risks
+    What you might end up paying in the long run for not visiting your dentist will likely be much higher, both for your wallet and your peace of mind.
+    </td></tr>
+  <tr>
+  <td>I am  feeling pain in my mouth, and face but anti-inflammatory medication such ibuprofen should be enough</td><td>You shoudn't self medicate. It is important to care about your dental health and vist your dentist, because it could be seriouss , poor dental health is linked to gum disease - The same bacteria found in the mouth have also been found in the hearts of people with coronary disease. </td></tr>
+  <tr>
+  <td> Dentists are trying to find new ways to generate money.
+    As an adult, if you brush and floss, you should really have no problems, depending on your diet. Dentists usually recommend recall visits every 6 months, but that's not necessary, and incredibly self-serving.
+   </td><td>Listen to the experts. Researchers have urged all adults to schedule preventive visits every six months. As a responsible adult, you should visit your dentist. </td></tr>
+ 
+   </div>
+ 
+  </form></td></tr>
+
+  </tbody>
+  </tr>
+  </table>
+                      
+</align>
+        
+{% endfor %}
+
+<center><A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+
+<div class="row"></div>
+{% include "display_posts.html" %}
+
+
+<div class="row">
+        
+   
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock%}

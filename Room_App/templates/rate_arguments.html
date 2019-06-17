@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<br> <br>
+<link rel="stylesheet" type="text/css" href="/static/content/likes.css" />
+
+<link rel="stylesheet" type="text/css" href="/static/content/dialog-box-effect.css" />
+
+<br>
+<br>
+<br>
+
+<div class="dialogue-box">
+    <div class="tdialogue-box-text">
+       In this section I am going to give you oral health advise
+        <br>please tell me which  statements you like the most
+    </div>
+    <div class="triangle-with-shadow"></div>
+</div>
+
+<!-- Section: Features v.3 -->
+<section class="my-5">
+
+  <!--Like-->
+  <div class="emoji  emoji-like">
+      <div class="emoji-hand">
+          <div class="emoji-thumb"></div>
+      </div>
+
+
+
+
+
+
+  
+    
+              <!-- Grid column -->
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <br>
+            </div>
+            <p align = left>Click the following links:</p>
+                  
+   <a href="{{ url_for('table2') }}">&nbsp;&nbsp;&nbsp;Going to the dentist? &raquo;</a>
+   <a href="{{ url_for('table3') }}">&nbsp;&nbsp;&nbsp;About your toothbrush &raquo;</a>               
+   <a href="{{ url_for('table4') }}">&nbsp;&nbsp;&nbsp;If you smoke  &raquo;</a>
+  <!-- <a href="{{ url_for('table4') }}">&nbsp;&nbsp;&nbsp;Brushed again &raquo;</a>--->
+  <br>
+  <br>
+     
+{% endblock %}

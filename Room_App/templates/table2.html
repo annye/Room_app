@@ -1,0 +1,482 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<div class="jumbotron">
+<br>
+<div class="wrapper">
+                <form action="{{ url_for('add_table_2') }}" method="post">
+<br>
+<br>
+<center>
+                <h4>Check-ups: Why you should go to the dentist?</h4>
+                <h6> Please rate the following statements based on how strongly they affect you emotionally: </h6>
+                <h6> Rates are from  1 that means you are not convinced to 10 the higher value for a very convincing statement</h6>
+</center>
+            </div>
+
+    <table class="blueTable">
+            <thead>
+            <tr>
+            <th>Statements</th>
+            <th>Ratings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+ <td>
+                It looks like it is in your best interest to keep your natural teeth and prevent hidden dental problems like gums diseases or even cancer.
+                    Can you see there is no point on avoiding the dentist?
+                    Going to the dentist is something everyone should do including you.
+  </td>
+            <!---2 row-->
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="rating">
+                            
+                            </label>
+                            <select class="select form-control" id="sc01" name="sc01">
+                             <option value="1">
+                              1
+                             </option>
+                             <option value="2">
+                              2
+                             </option>
+                             <option value="3">
+                              3
+                             </option>
+                             <option value="4">
+                              4
+                             </option>
+                             <option value="5">
+                              5
+                             </option>
+                             <option value="6">
+                              6
+                             </option>
+                             <option value="7">
+                              7
+                             </option>
+                             <option value="8">
+                              8
+                             </option>
+                             <option value="9">
+                              9
+                             </option>
+                             <option value="10">
+                              10
+                             </option>
+                             <option selected="selected" value="">
+                             </option>
+                            </select>
+                           </div> 
+
+            </td>
+            </tr>
+            <tr>
+ <td>
+  Ask yourself, ‘What are the consequences of not going to the dentist.’ 
+  it is in your best interest. Listen and take the advice, if you don't want to be someone that has to live without your natural teeth or relay on dentures call on your dentist and get it done.
+ </td>
+   <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="rating">
+                           
+                            </label>
+                            <select class="select form-control" id="sc02" name="sc02">
+                             <option value="1">
+                              1
+                             </option>
+                             <option value="2">
+                              2
+                             </option>
+                             <option value="3">
+                              3
+                             </option>
+                             <option value="4">
+                              4
+                             </option>
+                             <option value="5">
+                              5
+                             </option>
+                             <option value="6">
+                              6
+                             </option>
+                             <option value="7">
+                              7
+                             </option>
+                             <option value="8">
+                              8
+                             </option>
+                             <option value="9">
+                              9
+                             </option>
+                             <option value="10">
+                              10
+                             </option>
+                             <option selected="selected" value="">
+                             </option>
+                            </select>
+                           </div>
+  </td>
+  </tr>
+            <tr>
+                 <!---3row-->
+ <td>How would you feel if you have to live without your natural teeth? Let's grasp the idea, 
+  if you don't visit the dentist you may be someone that has to live without your natural teeth or relay on uncomfortable dentures, 
+   if this doesn't feel good to you You should consider getting in touch with your dentist.
+   </td>
+            <td><div class="form-group ">
+                    <label class="control-label " for="rating">
+                     
+                    </label>
+                    <select class="select form-control" id="sc03" name="sc03">
+                     <option value="1">
+                      1
+                     </option>
+                     <option value="2">
+                      2
+                     </option>
+                     <option value="3">
+                      3
+                     </option>
+                     <option value="4">
+                      4
+                     </option>
+                     <option value="5">
+                      5
+                     </option>
+                     <option value="6">
+                      6
+                     </option>
+                     <option value="7">
+                      7
+                     </option>
+                     <option value="8">
+                      8
+                     </option>
+                     <option value="9">
+                      9
+                     </option>
+                     <option value="10">
+                      10
+                     </option>
+                     <option selected="selected" value="">
+                     </option>
+                    </select>
+                   </div></td>
+  </tr>
+   <tr>
+ <td>
+Studies highlight the link between good dental health and self-steam. 
+Having a damaged smile can really affect a person’s self-esteem along with giving them a low self-image of themselves a higher risk or getting hidden diseases like heart issues. 
+ What would you like to do next? Would you consider to pay a dentist visit? 
+ </td>
+            <td><div class="form-group ">
+                    <label class="control-label " for="rating">
+                    
+                    </label>
+                    <select class="select form-control" id="sc04" name="sc04">
+                     <option value="1">
+                      1
+                     </option>
+                     <option value="2">
+                      2
+                     </option>
+                     <option value="3">
+                      3
+                     </option>
+                     <option value="4">
+                      4
+                     </option>
+                     <option value="5">
+                      5
+                     </option>
+                     <option value="6">
+                      6
+                     </option>
+                     <option value="7">
+                      7
+                     </option>
+                     <option value="8">
+                      8
+                     </option>
+                     <option value="9">
+                      9
+                     </option>
+                     <option value="10">
+                      10
+                     </option>
+                     <option selected="selected" value="">
+                     </option>
+                    </select>
+                   </div></td>
+  </tr>
+  <tr>
+ <td>Oral conditions are more commonly perceived as a problem of the poor. Most people relate a poor smile with poverty and poor hygiene habits.
+ Missing teeth can also totally alter people’s overall facial appearance. It can make a person look older due to missing and diminishing bone. You can prevent it
+ So let me tell you if you don't want to be someone that has to live without your natural teeth and be a victim of discrimination or excluded you should consider to visit the dentist.
+ </td>
+ <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="rating">
+                             
+                            </label>
+                            <select class="select form-control" id="sc05" name="sc05">
+                             <option value="1">
+                              1
+                             </option>
+                             <option value="2">
+                              2
+                             </option>
+                             <option value="3">
+                              3
+                             </option>
+                             <option value="4">
+                              4
+                             </option>
+                             <option value="5">
+                              5
+                             </option>
+                             <option value="6">
+                              6
+                             </option>
+                             <option value="7">
+                              7
+                             </option>
+                             <option value="8">
+                              8
+                             </option>
+                             <option value="9">
+                              9
+                             </option>
+                             <option value="10">
+                              10
+                             </option>
+                             <option selected="selected" value="">
+                             </option>
+                            </select>
+                           </div>
+
+            </td>
+            </tr>
+            <tr>
+ <td>
+  What is beautiful is generally good. A smile is one of the first things that we notice about each other However, when as adults, we start to lose our teeth due to decay or failed teeth we can lose confidence and self-esteem 
+ you don't want to be someone that has to live without your natural teeth or relay on dentures you will seriously consider to go and see a local dentist and get this done immediately.
+                    
+
+            </td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="rating">
+                        </label>
+                            <select class="select form-control" id="sc06" name="sc06">
+                             <option value="1">
+                              1
+                             </option>
+                             <option value="2">
+                              2
+                             </option>
+                             <option value="3">
+                              3
+                             </option>
+                             <option value="4">
+                              4
+                             </option>
+                             <option value="5">
+                              5
+                             </option>
+                             <option value="6">
+                              6
+                             </option>
+                             <option value="7">
+                              7
+                             </option>
+                             <option value="8">
+                              8
+                             </option>
+                             <option value="9">
+                              9
+                             </option>
+                             <option value="10">
+                              10
+                             </option>
+                             <option selected="selected" value="">
+                             </option>
+                            </select>
+                           </div>
+
+            </td>
+            </tr>
+            <tr>
+ <td>
+ I want you to think this through just for a moment.
+ You ‘ve probably noticed, nobody likes going to the dentist,  Everyone knows there is a stigma attached when people have to live with missing teeth 
+ It can affect employment, self-esteem, and cause serious medical issues, so I know that you will be careful because you don't want to be someone that has to live without your natural teeth or relay on dentures you will seriously consider to go and see a local dentist and get this done immediately.
+  </td>
+            <td><div class="form-group ">
+                    <label class="control-label " for="rating">
+               
+                    </label>
+                    <select class="select form-control" id="sc07" name="sc07">
+                     <option value="1">
+                      1
+                     </option>
+                     <option value="2">
+                      2
+                     </option>
+                     <option value="3">
+                      3
+                     </option>
+                     <option value="4">
+                      4
+                     </option>
+                     <option value="5">
+                      5
+                     </option>
+                     <option value="6">
+                      6
+                     </option>
+                     <option value="7">
+                      7
+                     </option>
+                     <option value="8">
+                      8
+                     </option>
+                     <option value="9">
+                      9
+                     </option>
+                     <option value="10">
+                      10
+                     </option>
+                     <option selected="selected" value="">
+                     </option>
+                    </select>
+                   </div></td>
+            </tr>
+            <tr>
+  <td>
+As an intelligent person, you must realise that it’s beneficial and sensible to visit the dentist regularly. With an attractive smile and healthy teeth, people may perceive you as more likeable and capable. 
+ If people and you are so intelligent, how come can take you so long to do the essential things like visiting the dentist? If you don't want to be someone that has to live without your natural teeth or relay on dentures go and see a local dentist.
+ </td>
+   <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="rating">
+             
+                            </label>
+                            <select class="select form-control" id="sc08" name="sc08">
+                             <option value="1">
+                              1
+                             </option>
+                             <option value="2">
+                              2
+                             </option>
+                             <option value="3">
+                              3
+                             </option>
+                             <option value="4">
+                              4
+                             </option>
+                             <option value="5">
+                              5
+                             </option>
+                             <option value="6">
+                              6
+                             </option>
+                             <option value="7">
+                              7
+                             </option>
+                             <option value="8">
+                              8
+                             </option>
+                             <option value="9">
+                              9
+                             </option>
+                             <option value="10">
+                              10
+                             </option>
+                             <option selected="selected" value="">
+                             </option>
+                            </select>
+                           </div>
+            </td>
+            </tr>
+            <tr>
+   <td>
+ I want you to think this through just for a moment.
+ Deep down you know, You don't like to be told what to do and because of that sometimes you have the tendency of ignoring helpful advice like the fact that you should be visiting the dentist for a general checkup. 
+  You definitely don't have to accept what I'm saying if you don't want to. But you know that if you don’t visit the dentist fairly soon you could become someone that has to live without your natural teeth or rely on dentures. I hope you would rather make healthy choices like visiting soon the dentist. 
+            </td>
+            <td><div class="form-group ">
+                    <label class="control-label " for="rating">
+                  
+                    </label>
+                    <select class="select form-control" id="sc09" name="sc09">
+                     <option value="1">
+                      1
+                     </option>
+                     <option value="2">
+                      2
+                     </option>
+                     <option value="3">
+                      3
+                     </option>
+                     <option value="4">
+                      4
+                     </option>
+                     <option value="5">
+                      5
+                     </option>
+                     <option value="6">
+                      6
+                     </option>
+                     <option value="7">
+                      7
+                     </option>
+                     <option value="8">
+                      8
+                     </option>
+                     <option value="9">
+                      9
+                     </option>
+                     <option value="10">
+                      10
+                     </option>
+                     <option selected="selected" value="">
+                     </option>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+       
+        <footer>
+                        <center>
+                            <div class="form-group">
+                              <div>
+                               <button class="btn btn-primary " name="submit" type="submit">
+                                SAVE
+                               </button>
+                              </div>
+                             </div>
+                            </form>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        </div>
+                          </footer>
+                    </center>
+    <center>
+     <A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+    
+    
+    
+    
+            </center>
+
+
+
+
+{%endblock%}

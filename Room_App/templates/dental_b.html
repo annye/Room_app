@@ -1,0 +1,420 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <form action="{{ url_for('add_dental_b') }}" method="post">
+ 
+   
+{% if session.username %}
+
+         <br>
+            <br>
+            <br>
+            <br>
+            <br> 
+    <div class="example">
+      <ul class="cards">
+          <br>
+          <br>
+          <li>
+       
+
+
+      
+ 
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you eat a well-balanced diet and limit sweets and sticky foods?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den01" type="radio" value="Yes"/>
+         Yes
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den01" type="radio" value="No"/>
+         No
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den01" type="radio" value="Maybe"/>
+         Maybe
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you smoke?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den02" type="radio" value="Yes"/>
+         Yes
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den02" type="radio" value="No"/>
+         No
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den02" type="radio" value="Sometimes"/>
+         Sometimes
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you use mouthwash and floss your teeth every day?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den03" type="radio" value="Always"/>
+         Always
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den03" type="radio" value="Sometimes"/>
+         Sometimes
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den03" type="radio" value="Never"/>
+         Never
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       How often do you brush your teeth?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den04" type="radio" value="Brushing one a day"/>
+         Brushing one a day
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den04" type="radio" value="Brushing at least twice a day"/>
+         Brushing at least twice a day
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den04" type="radio" value="Seldom or no brushing"/>
+         Seldom or no brushing
+        </label>
+       </div>
+      </div>
+     </div>
+
+
+  
+     <div class="form-group ">
+      <label class="control-label ">
+       Time since the last visit to the dentist?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den05" type="radio" value="1 year ago"/>
+         1 year ago
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den05" type="radio" value="1-2 years ago"/>
+         1-2 years ago
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den05" type="radio" value="2-5 years ago"/>
+         2-5 years ago
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den05" type="radio" value="More than 5 years ago"/>
+         More than 5 years ago
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den05" type="radio" value="Never  seen a dentist"/>
+         Never  seen a dentist
+        </label>
+       </div>
+      </div>
+     </div>
+    </li>
+    <li>
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you believe that You&rsquo;ll eventually lose all of your teeth?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den06" type="radio" value="Agree"/>
+         Agree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den06" type="radio" value="Disagree"/>
+         Disagree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den06" type="radio" value="Maybe"/>
+         Maybe
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you believe that dental problems stay in the mouth?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den07" type="radio" value="Agree"/>
+         Agree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den07" type="radio" value="Disagree"/>
+         Disagree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den07" type="radio" value="Maybe"/>
+         Maybe
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you believe that protecting teeth by simply brushing is enough?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den08" type="radio" value="Agree"/>
+         Agree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den08" type="radio" value="Disagree"/>
+         Disagree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den08" type="radio" value="Maybe"/>
+         Maybe
+        </label>
+       </div>
+      </div>
+     </div>
+    
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you believe that tooth decay is mainly caused by sugar?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den09" type="radio" value="Agree"/>
+         Agree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den09" type="radio" value="Disagree"/>
+         Disagree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den09" type="radio" value="Maybe"/>
+         Maybe
+        </label>
+       </div>
+      </div>
+     </div>
+
+    </li>
+
+      
+    <li>
+     <div class="form-group ">
+      <label class="control-label ">
+       Do you believe that chewing sugarless gum is as good as brushing your teeth?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den10" type="radio" value="Agree"/>
+         Agree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den10" type="radio" value="Disagree"/>
+         Disagree
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den10" type="radio" value="Maybe"/>
+         Maybe
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       If gums are bleeding what do you do?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den11" type="radio" value="Go to see the dentist"/>
+         Go to see the dentist
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den11" type="radio" value="Ignore bleeding"/>
+         Ignore bleeding
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den11" type="radio" value="Never had this problem"/>
+         Never had this problem
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den11" type="radio" value="Don't know what to do"/>
+         Don't know what to do
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den11" type="radio" value="Stop brushing"/>
+         Stop brushing
+        </label>
+       </div>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label ">
+       If you see signs of tooth decay what do you do?
+      </label>
+      <div class="">
+       <div class="radio">
+        <label class="radio">
+         <input name="den12" type="radio" value=" I don't care about my teeth if I don't feel pain."/>
+         I don't care about my teeth if I don't feel pain.
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den12" type="radio" value="Go and see a dentist only when in pain."/>
+         Go and see a dentist only when in pain.
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den12" type="radio" value="Go and see a dentist for the extraction of the tooth."/>
+         Go and see a dentist for the extraction of the tooth.
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den12" type="radio" value="Take pills for pain relief and hope for the best."/>
+         Take pills for pain relief and hope for the best.
+        </label>
+       </div>
+       <div class="radio">
+        <label class="radio">
+         <input name="den12" type="radio" value="Go and see a dentist immediately for filling."/>
+         Go and see a dentist immediately for filling.
+        </label>
+       </div>
+      </div>
+     </div>
+</li>
+<br>
+<br>
+<br>
+<br>
+<br> 
+</li>
+</ul>
+</div>
+</body>
+</html> 
+<center>
+<footer>
+    <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        SAVE
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+  </footer>
+</center>
+
+     {% endif %}
+      
+      
+     {% endblock %}
+     
+
+
+
+           
+   
+  

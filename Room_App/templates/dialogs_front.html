@@ -1,0 +1,58 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<br> <br>
+<link rel="stylesheet" type="text/css" href="/static/content/likes.css" />
+
+<link rel="stylesheet" type="text/css" href="/static/content/dialog-box-effect.css" />
+
+<br>
+<br>
+<br>
+
+<div class="dialogue-box">
+    <div class="tdialogue-box-text">
+   Welcome to the Room of discussion. In this section we are going to present different statements , please tell us how much you like or dislike the statments
+   
+    </div>
+    <div class="triangle-with-shadow"></div>
+</div>
+
+<!-- Section: Features v.3 -->
+<section class="my-5">
+
+  <!--Like-->
+  <div class="emoji  emoji-like">
+      <div class="emoji-hand">
+          <div class="emoji-thumb"></div>
+      </div>
+
+
+
+
+
+
+  
+    
+              <!-- Grid column -->
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <br>
+            </div>
+            <strong> <p align = left>Please click the buttons and rate the statements </p></strong>
+        
+              <p><a class="btn btn-default" href="{{ url_for('dialogs') }}"><strong>  Rating Dialogs &raquo;</a></strong></p>
+              <p><a class="btn btn-default" href="{{ url_for('r_answers') }}"><strong>  Rating Answers &raquo;</a></strong></p>
+           
+     
+{% endblock %}

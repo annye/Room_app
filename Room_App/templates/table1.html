@@ -1,0 +1,278 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+<br>
+<br>
+<div class="wrapper">
+                <form action="{{ url_for('add_table_1') }}" method="post">
+                    <center>
+        <h4>Check-ups: Hardly ever</h4>
+        <h6> Please rate the following statements based on how strongly they affect you emotionally: </h6>
+    </center>
+    </div>
+
+    <table class="blueTable">
+            <thead>
+            <tr>
+            <th>Statements</th>
+            <th>Ratings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+ <td>
+Seldom visits to the dentist is not recommended. It is important to visit the dentist on a regular basis.
+Otherwise, there can be serious consequences such as loss of your teeth and having to wear dentures for the rest of your life.
+ If people and you are so intelligent, how come can take you so long to do the essential things like visiting the dentist? If you don't want to be someone that has to live without your natural teeth or relay on dentures go and see a local dentist. <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="rates1" name="rates1"required>
+                                <option value="1">
+                                    1
+                                   </option>
+                                   <option value="2">
+                                    2
+                                   </option>
+                                   <option value="3">
+                                    3
+                                   </option>
+                                   <option value="4">
+                                    4
+                                   </option>
+                                   <option value="5">
+                                    5
+                                   </option>
+                                   <option value="6">
+                                    6
+                                   </option>
+                                   <option value="7">
+                                    7
+                                   </option>
+                                   <option value="8">
+                                    8
+                                   </option>
+                                   <option value="9">
+                                    9
+                                   </option>
+                                   <option value="10">
+                                    10
+                                   </option>
+            </td>
+            </tr>
+            <tr>
+<td>
+Seldom visits to the dentist is not recommended. It is important to visit the dentist on a regular basis.
+Poor dental health has been linked to stroke and coronary disease. Researchers have found that peridontal disease increases
+ the chances of fatal and non-fatal stroke by 17%. 
+The same bacteria found in the mouth have also been found in the hearts of people with coronary disease. Studies have found that poor dental health is also associated with stroke. Researchers found that periodontal disease increases the chances of fatal and non-fatal stroke by 17%.  
+   I hope you won’t let anything like that happen to you and you will consider paying a visit to the dentist
+  </td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="rates2" name="rates2"required>
+                                <option value="1">
+                                    1
+                                   </option>
+                                   <option value="2">
+                                    2
+                                   </option>
+                                   <option value="3">
+                                    3
+                                   </option>
+                                   <option value="4">
+                                    4
+                                   </option>
+                                   <option value="5">
+                                    5
+                                   </option>
+                                   <option value="6">
+                                    6
+                                   </option>
+                                   <option value="7">
+                                    7
+                                   </option>
+                                   <option value="8">
+                                    8
+                                   </option>
+                                   <option value="9">
+                                    9
+                                   </option>
+
+                                   <option value="10">
+                                    10
+                                   </option>
+            </td>
+            </tr>
+            <tr>
+ <td>
+ Seldom visits to the dentist is not recommended. Many gum disease symptoms don’t appear until the disease is well-established and you, like me, want the best for yourself and keep your original smile. Would you consider s to visit the dentist?</td>
+<td> 
+    <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="rates3" name="rates3"required>
+                        <option value="1">
+                            1
+                           </option>
+                           <option value="2">
+                            2
+                           </option>
+                           <option value="3">
+                            3
+                           </option>
+                           <option value="4">
+                            4
+                           </option>
+                           <option value="5">
+                            5
+                           </option>
+                           <option value="6">
+                            6
+                           </option>
+                           <option value="7">
+                            7
+                           </option>
+
+                           <option value="8">
+                            8
+                           </option>
+                           <option value="9">
+                            9
+                           </option>
+
+                           <option value="10">
+                            10
+                           </option>
+            </td>
+            </tr>
+            <tr>
+ <td>
+Seldom visits to the dentist is not recommended. It is advisable to regularly visit your dentist because early detection of dental issues can save money by avoiding major problems. Can you see yourself visiting the dentist soon?</td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                    <select class="select form-control" id="rates4" name="rates4"required>
+                        <option value="1">
+                            1
+                           </option>
+                           <option value="2">
+                            2
+                           </option>
+                           <option value="3">
+                            3
+                           </option>
+                           <option value="4">
+                            4
+                           </option>
+                           <option value="5">
+                            5
+                           </option>
+                           <option value="6">
+                            6
+                           </option>
+                           <option value="7">
+                            7
+                           </option>
+
+                           <option value="8">
+                            8
+                           </option>
+                           <option value="9">
+                            9
+                           </option>
+
+                           <option value="10">
+                            10
+                           </option>
+            </tr>
+            <tr>
+<td>
+Seldom visits to the dentist is not recommended. Brushing your teeth twice a day will not keep the dentist away.Heart disease, Diabetes, Ulcers and Osteoporosis are just a few of the hidden consequences of poor dental care that's why it is important to visit the dentist for checkups before a major problem arises.</td>
+ <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="rates5" name="rates5"required>
+                                <option value="1">
+                                    1
+                                   </option>
+                                   <option value="2">
+                                    2
+                                   </option>
+                                   <option value="3">
+                                    3
+                                   </option>
+                                   <option value="4">
+                                    4
+                                   </option>
+                                   <option value="5">
+                                    5
+                                   </option>
+                                   <option value="6">
+                                    6
+                                   </option>
+                                   <option value="7">
+                                    7
+                                   </option>
+                                   <option value="8">
+                                    8
+                                   </option>
+                                   <option value="9">
+                                    9
+                                   </option>
+                                   <option value="10">
+                                    10
+                                   </option>
+ </td>
+  </tr>
+            </tbody>
+            </table>
+           
+            <footer>
+                
+                    <center>
+                            <div class="form-group">
+                              <div>
+                               <button class="btn btn-primary " name="submit" type="submit">
+                                SAVE
+                               </button>
+                              </div>
+                             </div>
+                            </form>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        </div>
+                          </footer>
+                    </center>
+    <center>
+     <A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+    
+    
+    
+    
+            </center>
+    
+    
+    
+    
+       
+
+
+       
+
+
+
+            {% endblock %}

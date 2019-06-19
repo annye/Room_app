@@ -13,11 +13,11 @@ from werkzeug.debug import DebuggedApplication
 import sys
 import pdb
 import os
-from multiprocessing import Value
+#from multiprocessing import Value
 
-counter = Value('i', 0)
+#counter = Value('i', 0)
 
-app.secret_key = os.urandom(24)
+app = Flask(__name__)
 
 
 @app.route('/')

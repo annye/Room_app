@@ -3,6 +3,6 @@ This script runs the My_site application using a development server.
 """
 
 from Room_App import app
-
-if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+import os
+port = int(os.environ.get('PORT',8000))
+app.run(debug=True, port=8000)
